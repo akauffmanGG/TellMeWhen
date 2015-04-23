@@ -21,6 +21,7 @@ public class TimePhraseFactory {
 		timePhrases.add(new NearTimePhrase());
 		timePhrases.add(new DayOfWeekTimePhrase());
 		timePhrases.add(new ChangeUnitTimePhrase());
+		timePhrases.add(new MonthTimePhrase());
 		
 		return timePhrases;
 	}

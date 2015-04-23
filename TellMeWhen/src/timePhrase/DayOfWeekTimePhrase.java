@@ -47,7 +47,7 @@ public class DayOfWeekTimePhrase implements TimePhrase {
 		if(difference >= 0 && lookBack){
 			//If we're looking in the past, and it's before that day in the current week, 
 			//then go back to previous week.
-			difference -=7;
+			difference -= 7;
 		} else if(difference <=0 && !lookBack){
 			//If we're looking in the future, and it's after that day in the current week, 
 			//then go forward to next week.
