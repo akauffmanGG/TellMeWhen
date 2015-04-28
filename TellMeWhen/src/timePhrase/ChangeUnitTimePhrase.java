@@ -14,13 +14,13 @@ import java.util.regex.Pattern;
 public class ChangeUnitTimePhrase implements TimePhrase {
 	
 	/** Phrase regex. Matches Next or Last followed by millisecond, second, minute, hour, day, week, or month. */
-	private static final Pattern CHANGE_WEEK = Pattern.compile("^(NEXT|LAST)\\s*(MILLISECOND|SECOND|MINUTE|HOUR|DAY|WEEK|MONTH|YEAR)", Pattern.CASE_INSENSITIVE);
+	private static final Pattern CHANGE_UNIT = Pattern.compile("^(NEXT|LAST)\\s*(MILLISECOND|SECOND|MINUTE|HOUR|DAY|WEEK|MONTH|YEAR)", Pattern.CASE_INSENSITIVE);
 	/** Matcher that stores results of matching the given time to the pattern. */
 	private Matcher matcher;
 	
 	@Override
 	public boolean matches(String time) {
-		this.matcher = CHANGE_WEEK.matcher(time);
+		this.matcher = CHANGE_UNIT.matcher(time);
 		return matcher.matches();
 	}
 
