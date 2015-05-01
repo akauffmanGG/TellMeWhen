@@ -6,10 +6,17 @@ The TellMeWhen class has a static listen class that takes in a phrase. Passing t
 For example the phrase: "This April" will return a date for April relative to the current date. However, if you pass the phrase along with a date of March 1st, 2012, then it will return the date of April 1st, 2012.
 
 Here are more examples of supported phrases:
+
 Next Hour
+
 Last Week
+
 Previous Saturday
+
 Last Day of the Week
+
 First Week of the Month
+
 Next Jan
+
 Yesterday
